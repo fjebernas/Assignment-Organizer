@@ -1,0 +1,10 @@
+C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganzier\bin\Debug\MyAssignmentOrganzier.exe.config
+C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganzier\bin\Debug\MyAssignmentOrganzier.exe
+C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganzier\bin\Debug\MyAssignmentOrganzier.pdb
+C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganzier\obj\Debug\MyAssignmentOrganzier.csproj.AssemblyReference.cache
+C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganzier\obj\Debug\MyAssignmentOrganzier.Form1.resources
+C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganzier\obj\Debug\MyAssignmentOrganzier.Properties.Resources.resources
+C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganzier\obj\Debug\MyAssignmentOrganzier.csproj.GenerateResource.cache
+C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganzier\obj\Debug\MyAssignmentOrganzier.csproj.CoreCompileInputs.cache
+C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganzier\obj\Debug\MyAssignmentOrganzier.exe
+C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganzier\obj\Debug\MyAssignmentOrganzier.pdb
