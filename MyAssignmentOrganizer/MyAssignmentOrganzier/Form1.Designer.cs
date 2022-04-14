@@ -31,19 +31,19 @@ namespace MyAssignmentOrganzier
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
+            this.tqmFinishedBtn = new System.Windows.Forms.Button();
             this.tqmAddBtn = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
+            this.technoFinishedBtn = new System.Windows.Forms.Button();
             this.technoAddBtn = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
+            this.fieldtripsFinishedBtn = new System.Windows.Forms.Button();
             this.fieldtripsAddBtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.networksFinishedBtn = new System.Windows.Forms.Button();
             this.networksAddBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.ethicsFinishedBtn = new System.Windows.Forms.Button();
             this.ethicsAddBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,13 +54,13 @@ namespace MyAssignmentOrganzier
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.elec4FinishedBtn = new System.Windows.Forms.Button();
             this.elec4AddBtn = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
+            this.softwareFinishedBtn = new System.Windows.Forms.Button();
             this.softwareAddBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.elec3FinishedBtn = new System.Windows.Forms.Button();
             this.elec3AddBtn = new System.Windows.Forms.Button();
             this.elec3DescLabel = new System.Windows.Forms.Label();
             this.elec4DescLabel = new System.Windows.Forms.Label();
@@ -97,7 +97,7 @@ namespace MyAssignmentOrganzier
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.11726F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.88274F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
             this.tableLayoutPanel1.Controls.Add(this.panel8, 3, 7);
             this.tableLayoutPanel1.Controls.Add(this.panel7, 3, 6);
             this.tableLayoutPanel1.Controls.Add(this.panel5, 3, 4);
@@ -146,21 +146,22 @@ namespace MyAssignmentOrganzier
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.button16);
+            this.panel8.Controls.Add(this.tqmFinishedBtn);
             this.panel8.Controls.Add(this.tqmAddBtn);
-            this.panel8.Location = new System.Drawing.Point(958, 398);
+            this.panel8.Location = new System.Drawing.Point(950, 398);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(102, 47);
             this.panel8.TabIndex = 9;
             // 
-            // button16
+            // tqmFinishedBtn
             // 
-            this.button16.Location = new System.Drawing.Point(3, 24);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(96, 23);
-            this.button16.TabIndex = 0;
-            this.button16.Text = "FINISHED";
-            this.button16.UseVisualStyleBackColor = true;
+            this.tqmFinishedBtn.Location = new System.Drawing.Point(3, 24);
+            this.tqmFinishedBtn.Name = "tqmFinishedBtn";
+            this.tqmFinishedBtn.Size = new System.Drawing.Size(96, 23);
+            this.tqmFinishedBtn.TabIndex = 0;
+            this.tqmFinishedBtn.Text = "FINISHED";
+            this.tqmFinishedBtn.UseVisualStyleBackColor = true;
+            this.tqmFinishedBtn.Click += new System.EventHandler(this.finishedBtn_Click);
             // 
             // tqmAddBtn
             // 
@@ -174,21 +175,22 @@ namespace MyAssignmentOrganzier
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.button14);
+            this.panel7.Controls.Add(this.technoFinishedBtn);
             this.panel7.Controls.Add(this.technoAddBtn);
-            this.panel7.Location = new System.Drawing.Point(958, 342);
+            this.panel7.Location = new System.Drawing.Point(950, 342);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(102, 47);
             this.panel7.TabIndex = 9;
             // 
-            // button14
+            // technoFinishedBtn
             // 
-            this.button14.Location = new System.Drawing.Point(3, 24);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(96, 23);
-            this.button14.TabIndex = 0;
-            this.button14.Text = "FINISHED";
-            this.button14.UseVisualStyleBackColor = true;
+            this.technoFinishedBtn.Location = new System.Drawing.Point(3, 24);
+            this.technoFinishedBtn.Name = "technoFinishedBtn";
+            this.technoFinishedBtn.Size = new System.Drawing.Size(96, 23);
+            this.technoFinishedBtn.TabIndex = 0;
+            this.technoFinishedBtn.Text = "FINISHED";
+            this.technoFinishedBtn.UseVisualStyleBackColor = true;
+            this.technoFinishedBtn.Click += new System.EventHandler(this.finishedBtn_Click);
             // 
             // technoAddBtn
             // 
@@ -202,21 +204,22 @@ namespace MyAssignmentOrganzier
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.button10);
+            this.panel5.Controls.Add(this.fieldtripsFinishedBtn);
             this.panel5.Controls.Add(this.fieldtripsAddBtn);
-            this.panel5.Location = new System.Drawing.Point(958, 230);
+            this.panel5.Location = new System.Drawing.Point(950, 230);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(102, 47);
             this.panel5.TabIndex = 9;
             // 
-            // button10
+            // fieldtripsFinishedBtn
             // 
-            this.button10.Location = new System.Drawing.Point(3, 24);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(96, 23);
-            this.button10.TabIndex = 0;
-            this.button10.Text = "FINISHED";
-            this.button10.UseVisualStyleBackColor = true;
+            this.fieldtripsFinishedBtn.Location = new System.Drawing.Point(3, 24);
+            this.fieldtripsFinishedBtn.Name = "fieldtripsFinishedBtn";
+            this.fieldtripsFinishedBtn.Size = new System.Drawing.Size(96, 23);
+            this.fieldtripsFinishedBtn.TabIndex = 0;
+            this.fieldtripsFinishedBtn.Text = "FINISHED";
+            this.fieldtripsFinishedBtn.UseVisualStyleBackColor = true;
+            this.fieldtripsFinishedBtn.Click += new System.EventHandler(this.finishedBtn_Click);
             // 
             // fieldtripsAddBtn
             // 
@@ -230,21 +233,22 @@ namespace MyAssignmentOrganzier
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button8);
+            this.panel4.Controls.Add(this.networksFinishedBtn);
             this.panel4.Controls.Add(this.networksAddBtn);
-            this.panel4.Location = new System.Drawing.Point(958, 174);
+            this.panel4.Location = new System.Drawing.Point(950, 174);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(102, 47);
             this.panel4.TabIndex = 9;
             // 
-            // button8
+            // networksFinishedBtn
             // 
-            this.button8.Location = new System.Drawing.Point(3, 24);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(96, 23);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "FINISHED";
-            this.button8.UseVisualStyleBackColor = true;
+            this.networksFinishedBtn.Location = new System.Drawing.Point(3, 24);
+            this.networksFinishedBtn.Name = "networksFinishedBtn";
+            this.networksFinishedBtn.Size = new System.Drawing.Size(96, 23);
+            this.networksFinishedBtn.TabIndex = 0;
+            this.networksFinishedBtn.Text = "FINISHED";
+            this.networksFinishedBtn.UseVisualStyleBackColor = true;
+            this.networksFinishedBtn.Click += new System.EventHandler(this.finishedBtn_Click);
             // 
             // networksAddBtn
             // 
@@ -258,21 +262,22 @@ namespace MyAssignmentOrganzier
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button6);
+            this.panel3.Controls.Add(this.ethicsFinishedBtn);
             this.panel3.Controls.Add(this.ethicsAddBtn);
-            this.panel3.Location = new System.Drawing.Point(958, 118);
+            this.panel3.Location = new System.Drawing.Point(950, 118);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(102, 47);
             this.panel3.TabIndex = 9;
             // 
-            // button6
+            // ethicsFinishedBtn
             // 
-            this.button6.Location = new System.Drawing.Point(3, 24);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(96, 23);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "FINISHED";
-            this.button6.UseVisualStyleBackColor = true;
+            this.ethicsFinishedBtn.Location = new System.Drawing.Point(3, 24);
+            this.ethicsFinishedBtn.Name = "ethicsFinishedBtn";
+            this.ethicsFinishedBtn.Size = new System.Drawing.Size(96, 23);
+            this.ethicsFinishedBtn.TabIndex = 0;
+            this.ethicsFinishedBtn.Text = "FINISHED";
+            this.ethicsFinishedBtn.UseVisualStyleBackColor = true;
+            this.ethicsFinishedBtn.Click += new System.EventHandler(this.finishedBtn_Click);
             // 
             // ethicsAddBtn
             // 
@@ -288,7 +293,7 @@ namespace MyAssignmentOrganzier
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(83, 79);
+            this.label2.Location = new System.Drawing.Point(81, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 1;
@@ -299,7 +304,7 @@ namespace MyAssignmentOrganzier
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 128);
+            this.label3.Location = new System.Drawing.Point(8, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(214, 26);
             this.label3.TabIndex = 2;
@@ -310,7 +315,7 @@ namespace MyAssignmentOrganzier
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 191);
+            this.label4.Location = new System.Drawing.Point(48, 191);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 13);
             this.label4.TabIndex = 3;
@@ -321,9 +326,9 @@ namespace MyAssignmentOrganzier
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 247);
+            this.label5.Location = new System.Drawing.Point(22, 240);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(221, 13);
+            this.label5.Size = new System.Drawing.Size(186, 26);
             this.label5.TabIndex = 4;
             this.label5.Text = "COMPUTER SEMINARS AND FIELD TRIPS";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -332,7 +337,7 @@ namespace MyAssignmentOrganzier
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(43, 303);
+            this.label6.Location = new System.Drawing.Point(42, 303);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(146, 13);
             this.label6.TabIndex = 5;
@@ -343,7 +348,7 @@ namespace MyAssignmentOrganzier
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 359);
+            this.label7.Location = new System.Drawing.Point(18, 359);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(194, 13);
             this.label7.TabIndex = 6;
@@ -354,7 +359,7 @@ namespace MyAssignmentOrganzier
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(24, 411);
+            this.label8.Location = new System.Drawing.Point(22, 411);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(185, 26);
             this.label8.TabIndex = 7;
@@ -365,7 +370,7 @@ namespace MyAssignmentOrganzier
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 23);
+            this.label1.Location = new System.Drawing.Point(81, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 0;
@@ -373,21 +378,22 @@ namespace MyAssignmentOrganzier
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.elec4FinishedBtn);
             this.panel2.Controls.Add(this.elec4AddBtn);
-            this.panel2.Location = new System.Drawing.Point(958, 62);
+            this.panel2.Location = new System.Drawing.Point(950, 62);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(102, 47);
             this.panel2.TabIndex = 9;
             // 
-            // button4
+            // elec4FinishedBtn
             // 
-            this.button4.Location = new System.Drawing.Point(3, 24);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(96, 23);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "FINISHED";
-            this.button4.UseVisualStyleBackColor = true;
+            this.elec4FinishedBtn.Location = new System.Drawing.Point(3, 24);
+            this.elec4FinishedBtn.Name = "elec4FinishedBtn";
+            this.elec4FinishedBtn.Size = new System.Drawing.Size(96, 23);
+            this.elec4FinishedBtn.TabIndex = 0;
+            this.elec4FinishedBtn.Text = "FINISHED";
+            this.elec4FinishedBtn.UseVisualStyleBackColor = true;
+            this.elec4FinishedBtn.Click += new System.EventHandler(this.finishedBtn_Click);
             // 
             // elec4AddBtn
             // 
@@ -401,21 +407,22 @@ namespace MyAssignmentOrganzier
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.button12);
+            this.panel6.Controls.Add(this.softwareFinishedBtn);
             this.panel6.Controls.Add(this.softwareAddBtn);
-            this.panel6.Location = new System.Drawing.Point(958, 286);
+            this.panel6.Location = new System.Drawing.Point(950, 286);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(102, 47);
             this.panel6.TabIndex = 10;
             // 
-            // button12
+            // softwareFinishedBtn
             // 
-            this.button12.Location = new System.Drawing.Point(3, 24);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(96, 23);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "FINISHED";
-            this.button12.UseVisualStyleBackColor = true;
+            this.softwareFinishedBtn.Location = new System.Drawing.Point(3, 24);
+            this.softwareFinishedBtn.Name = "softwareFinishedBtn";
+            this.softwareFinishedBtn.Size = new System.Drawing.Size(96, 23);
+            this.softwareFinishedBtn.TabIndex = 0;
+            this.softwareFinishedBtn.Text = "FINISHED";
+            this.softwareFinishedBtn.UseVisualStyleBackColor = true;
+            this.softwareFinishedBtn.Click += new System.EventHandler(this.finishedBtn_Click);
             // 
             // softwareAddBtn
             // 
@@ -429,21 +436,22 @@ namespace MyAssignmentOrganzier
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.elec3FinishedBtn);
             this.panel1.Controls.Add(this.elec3AddBtn);
-            this.panel1.Location = new System.Drawing.Point(958, 6);
+            this.panel1.Location = new System.Drawing.Point(950, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(102, 47);
             this.panel1.TabIndex = 8;
             // 
-            // button2
+            // elec3FinishedBtn
             // 
-            this.button2.Location = new System.Drawing.Point(3, 24);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "FINISHED";
-            this.button2.UseVisualStyleBackColor = true;
+            this.elec3FinishedBtn.Location = new System.Drawing.Point(3, 24);
+            this.elec3FinishedBtn.Name = "elec3FinishedBtn";
+            this.elec3FinishedBtn.Size = new System.Drawing.Size(96, 23);
+            this.elec3FinishedBtn.TabIndex = 0;
+            this.elec3FinishedBtn.Text = "FINISHED";
+            this.elec3FinishedBtn.UseVisualStyleBackColor = true;
+            this.elec3FinishedBtn.Click += new System.EventHandler(this.finishedBtn_Click);
             // 
             // elec3AddBtn
             // 
@@ -459,7 +467,7 @@ namespace MyAssignmentOrganzier
             // 
             this.elec3DescLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.elec3DescLabel.AutoSize = true;
-            this.elec3DescLabel.Location = new System.Drawing.Point(509, 23);
+            this.elec3DescLabel.Location = new System.Drawing.Point(503, 23);
             this.elec3DescLabel.Name = "elec3DescLabel";
             this.elec3DescLabel.Size = new System.Drawing.Size(0, 13);
             this.elec3DescLabel.TabIndex = 11;
@@ -468,7 +476,7 @@ namespace MyAssignmentOrganzier
             // 
             this.elec4DescLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.elec4DescLabel.AutoSize = true;
-            this.elec4DescLabel.Location = new System.Drawing.Point(509, 79);
+            this.elec4DescLabel.Location = new System.Drawing.Point(503, 79);
             this.elec4DescLabel.Name = "elec4DescLabel";
             this.elec4DescLabel.Size = new System.Drawing.Size(0, 13);
             this.elec4DescLabel.TabIndex = 11;
@@ -477,7 +485,7 @@ namespace MyAssignmentOrganzier
             // 
             this.ethicsDescLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ethicsDescLabel.AutoSize = true;
-            this.ethicsDescLabel.Location = new System.Drawing.Point(509, 135);
+            this.ethicsDescLabel.Location = new System.Drawing.Point(503, 135);
             this.ethicsDescLabel.Name = "ethicsDescLabel";
             this.ethicsDescLabel.Size = new System.Drawing.Size(0, 13);
             this.ethicsDescLabel.TabIndex = 11;
@@ -486,7 +494,7 @@ namespace MyAssignmentOrganzier
             // 
             this.networksDescLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.networksDescLabel.AutoSize = true;
-            this.networksDescLabel.Location = new System.Drawing.Point(509, 191);
+            this.networksDescLabel.Location = new System.Drawing.Point(503, 191);
             this.networksDescLabel.Name = "networksDescLabel";
             this.networksDescLabel.Size = new System.Drawing.Size(0, 13);
             this.networksDescLabel.TabIndex = 11;
@@ -495,7 +503,7 @@ namespace MyAssignmentOrganzier
             // 
             this.fieldtripsDescLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fieldtripsDescLabel.AutoSize = true;
-            this.fieldtripsDescLabel.Location = new System.Drawing.Point(509, 247);
+            this.fieldtripsDescLabel.Location = new System.Drawing.Point(503, 247);
             this.fieldtripsDescLabel.Name = "fieldtripsDescLabel";
             this.fieldtripsDescLabel.Size = new System.Drawing.Size(0, 13);
             this.fieldtripsDescLabel.TabIndex = 11;
@@ -504,7 +512,7 @@ namespace MyAssignmentOrganzier
             // 
             this.softwareDescLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.softwareDescLabel.AutoSize = true;
-            this.softwareDescLabel.Location = new System.Drawing.Point(509, 303);
+            this.softwareDescLabel.Location = new System.Drawing.Point(503, 303);
             this.softwareDescLabel.Name = "softwareDescLabel";
             this.softwareDescLabel.Size = new System.Drawing.Size(0, 13);
             this.softwareDescLabel.TabIndex = 11;
@@ -513,7 +521,7 @@ namespace MyAssignmentOrganzier
             // 
             this.technoDescLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.technoDescLabel.AutoSize = true;
-            this.technoDescLabel.Location = new System.Drawing.Point(509, 359);
+            this.technoDescLabel.Location = new System.Drawing.Point(503, 359);
             this.technoDescLabel.Name = "technoDescLabel";
             this.technoDescLabel.Size = new System.Drawing.Size(0, 13);
             this.technoDescLabel.TabIndex = 11;
@@ -522,7 +530,7 @@ namespace MyAssignmentOrganzier
             // 
             this.tqmDescLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tqmDescLabel.AutoSize = true;
-            this.tqmDescLabel.Location = new System.Drawing.Point(509, 417);
+            this.tqmDescLabel.Location = new System.Drawing.Point(503, 417);
             this.tqmDescLabel.Name = "tqmDescLabel";
             this.tqmDescLabel.Size = new System.Drawing.Size(0, 13);
             this.tqmDescLabel.TabIndex = 11;
@@ -531,7 +539,7 @@ namespace MyAssignmentOrganzier
             // 
             this.elec3DedlineLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.elec3DedlineLabel.AutoSize = true;
-            this.elec3DedlineLabel.Location = new System.Drawing.Point(870, 23);
+            this.elec3DedlineLabel.Location = new System.Drawing.Point(862, 23);
             this.elec3DedlineLabel.Name = "elec3DedlineLabel";
             this.elec3DedlineLabel.Size = new System.Drawing.Size(0, 13);
             this.elec3DedlineLabel.TabIndex = 12;
@@ -540,7 +548,7 @@ namespace MyAssignmentOrganzier
             // 
             this.elec4DedlineLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.elec4DedlineLabel.AutoSize = true;
-            this.elec4DedlineLabel.Location = new System.Drawing.Point(870, 79);
+            this.elec4DedlineLabel.Location = new System.Drawing.Point(862, 79);
             this.elec4DedlineLabel.Name = "elec4DedlineLabel";
             this.elec4DedlineLabel.Size = new System.Drawing.Size(0, 13);
             this.elec4DedlineLabel.TabIndex = 12;
@@ -549,7 +557,7 @@ namespace MyAssignmentOrganzier
             // 
             this.ethicsDedlineLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ethicsDedlineLabel.AutoSize = true;
-            this.ethicsDedlineLabel.Location = new System.Drawing.Point(870, 135);
+            this.ethicsDedlineLabel.Location = new System.Drawing.Point(862, 135);
             this.ethicsDedlineLabel.Name = "ethicsDedlineLabel";
             this.ethicsDedlineLabel.Size = new System.Drawing.Size(0, 13);
             this.ethicsDedlineLabel.TabIndex = 12;
@@ -558,7 +566,7 @@ namespace MyAssignmentOrganzier
             // 
             this.networksDedlineLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.networksDedlineLabel.AutoSize = true;
-            this.networksDedlineLabel.Location = new System.Drawing.Point(870, 191);
+            this.networksDedlineLabel.Location = new System.Drawing.Point(862, 191);
             this.networksDedlineLabel.Name = "networksDedlineLabel";
             this.networksDedlineLabel.Size = new System.Drawing.Size(0, 13);
             this.networksDedlineLabel.TabIndex = 12;
@@ -567,7 +575,7 @@ namespace MyAssignmentOrganzier
             // 
             this.fieldtripsDedlineLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fieldtripsDedlineLabel.AutoSize = true;
-            this.fieldtripsDedlineLabel.Location = new System.Drawing.Point(870, 247);
+            this.fieldtripsDedlineLabel.Location = new System.Drawing.Point(862, 247);
             this.fieldtripsDedlineLabel.Name = "fieldtripsDedlineLabel";
             this.fieldtripsDedlineLabel.Size = new System.Drawing.Size(0, 13);
             this.fieldtripsDedlineLabel.TabIndex = 12;
@@ -576,7 +584,7 @@ namespace MyAssignmentOrganzier
             // 
             this.softwareDedlineLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.softwareDedlineLabel.AutoSize = true;
-            this.softwareDedlineLabel.Location = new System.Drawing.Point(870, 303);
+            this.softwareDedlineLabel.Location = new System.Drawing.Point(862, 303);
             this.softwareDedlineLabel.Name = "softwareDedlineLabel";
             this.softwareDedlineLabel.Size = new System.Drawing.Size(0, 13);
             this.softwareDedlineLabel.TabIndex = 12;
@@ -585,7 +593,7 @@ namespace MyAssignmentOrganzier
             // 
             this.technoDedlineLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.technoDedlineLabel.AutoSize = true;
-            this.technoDedlineLabel.Location = new System.Drawing.Point(870, 359);
+            this.technoDedlineLabel.Location = new System.Drawing.Point(862, 359);
             this.technoDedlineLabel.Name = "technoDedlineLabel";
             this.technoDedlineLabel.Size = new System.Drawing.Size(0, 13);
             this.technoDedlineLabel.TabIndex = 12;
@@ -594,7 +602,7 @@ namespace MyAssignmentOrganzier
             // 
             this.tqmDedlineLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tqmDedlineLabel.AutoSize = true;
-            this.tqmDedlineLabel.Location = new System.Drawing.Point(870, 417);
+            this.tqmDedlineLabel.Location = new System.Drawing.Point(862, 417);
             this.tqmDedlineLabel.Name = "tqmDedlineLabel";
             this.tqmDedlineLabel.Size = new System.Drawing.Size(0, 13);
             this.tqmDedlineLabel.TabIndex = 12;
@@ -647,28 +655,28 @@ namespace MyAssignmentOrganzier
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button tqmFinishedBtn;
         private System.Windows.Forms.Button tqmAddBtn;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button technoFinishedBtn;
         private System.Windows.Forms.Button technoAddBtn;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button fieldtripsFinishedBtn;
         private System.Windows.Forms.Button fieldtripsAddBtn;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button networksFinishedBtn;
         private System.Windows.Forms.Button networksAddBtn;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button ethicsFinishedBtn;
         private System.Windows.Forms.Button ethicsAddBtn;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button elec4FinishedBtn;
         private System.Windows.Forms.Button elec4AddBtn;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button softwareFinishedBtn;
         private System.Windows.Forms.Button softwareAddBtn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button elec3FinishedBtn;
         private System.Windows.Forms.Button elec3AddBtn;
         private System.Windows.Forms.Label elec3DescLabel;
         private System.Windows.Forms.Label elec4DescLabel;
