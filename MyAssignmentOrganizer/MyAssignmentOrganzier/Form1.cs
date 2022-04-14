@@ -15,7 +15,7 @@ namespace MyAssignmentOrganzier
     public partial class Form1 : Form
     {
         string _path = @"C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganizer\MyAssignmentOrganzier\json\Data.json";
-        
+
         All allSubjects = new All();
 
         public Subject elective3 = new Subject();
@@ -34,6 +34,7 @@ namespace MyAssignmentOrganzier
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // READ CONTENTS OF JSON FILE AND SHOW THEM
             string jsonFromFile = File.ReadAllText(_path);
             allSubjects = JsonConvert.DeserializeObject<All>(jsonFromFile);
 
@@ -60,6 +61,15 @@ namespace MyAssignmentOrganzier
 
             tqmDescLabel.Text = allSubjects.tqm_desc;
             tqmDedlineLabel.Text = allSubjects.tqm_dline;
+
+            //STYLING THE DESCRIPTION AND DEADLINE LABELS
+            foreach (Label label in this.tableLayoutPanel1.Controls.OfType<Label>())
+            {
+                if(label.Tag == "descriptionLabels" || label.Tag == "deadlineLabels")
+                {
+                    label.Font = new Font("Century Gothic",10);
+                }
+            }
         }
 
         private void addBtn_Click(object sender, EventArgs e)
