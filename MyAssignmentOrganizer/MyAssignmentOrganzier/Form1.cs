@@ -12,26 +12,38 @@ namespace MyAssignmentOrganzier
 {
     public partial class Form1 : Form
     {
+        public Subject elective3 = new Subject();
+        public Subject elective4 = new Subject();
+        public Subject ethics = new Subject();
+        public Subject networks = new Subject();
+        public Subject fieldtrips = new Subject();
+        public Subject software = new Subject();
+        public Subject techno = new Subject();
+        public Subject tqm = new Subject();
+
         public Form1()
         {
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
         private void addBtn_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            subject.Mode = btn.Name;
+            mode.Mode = btn.Name;
 
             Form2 form2 = new Form2();
-
             form2.Confirmed += HasBeenConfirmed;
-
             form2.Show();
         }
 
         private void HasBeenConfirmed()
         {
-            switch (subject.Mode)
+            switch (mode.Mode)
             {
                 case "elec3AddBtn":
                     elec3DescLabel.Text = elective3.Description;
