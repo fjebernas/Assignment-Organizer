@@ -65,6 +65,7 @@ namespace MyAssignmentOrganzier
             this.descTxtBx.Name = "descTxtBx";
             this.descTxtBx.Size = new System.Drawing.Size(300, 20);
             this.descTxtBx.TabIndex = 1;
+            this.descTxtBx.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyDown);
             // 
             // dedlineTxtBx
             // 
@@ -72,6 +73,7 @@ namespace MyAssignmentOrganzier
             this.dedlineTxtBx.Name = "dedlineTxtBx";
             this.dedlineTxtBx.Size = new System.Drawing.Size(135, 20);
             this.dedlineTxtBx.TabIndex = 2;
+            this.dedlineTxtBx.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyDown);
             // 
             // button1
             // 
@@ -118,6 +120,7 @@ namespace MyAssignmentOrganzier
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Assignment";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

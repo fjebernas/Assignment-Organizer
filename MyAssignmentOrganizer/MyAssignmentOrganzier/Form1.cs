@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,10 +15,11 @@ namespace MyAssignmentOrganzier
 {
     public partial class Form1 : Form
     {
-        string _path = @"C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganizer\MyAssignmentOrganzier\json\Data.json";
+        readonly string _path = @"C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganizer\MyAssignmentOrganzier\json\Data.json";
 
-        All allSubjects = new All();
-
+        // INSTATIATE AN 'ALL' CLASS
+        public All allSubjects = new All();
+        // INSTANTIATE 'SUBJECT' CLASS
         public Subject elective3 = new Subject();
         public Subject elective4 = new Subject();
         public Subject ethics = new Subject();
@@ -65,7 +67,7 @@ namespace MyAssignmentOrganzier
             //STYLING THE DESCRIPTION AND DEADLINE LABELS
             foreach (Label label in this.tableLayoutPanel1.Controls.OfType<Label>())
             {
-                if(label.Tag == "descriptionLabels" || label.Tag == "deadlineLabels")
+                if(Convert.ToString(label.Tag) == "descriptionLabels" || Convert.ToString(label.Tag) == "deadlineLabels")
                 {
                     label.Font = new Font("Century Gothic",10);
                 }
@@ -75,7 +77,7 @@ namespace MyAssignmentOrganzier
         private void addBtn_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            mode.Mode = btn.Name;
+            Tools.AddMode = btn.Name;
 
             Form2 form2 = new Form2();
             form2.Confirmed += HasBeenConfirmed;
@@ -129,7 +131,7 @@ namespace MyAssignmentOrganzier
 
         private void HasBeenConfirmed()
         {
-            switch (mode.Mode)
+            switch (Tools.AddMode)
             {
                 case "elec3AddBtn":
                     elec3DescLabel.Text = elective3.Description;

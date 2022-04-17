@@ -22,9 +22,22 @@ namespace MyAssignmentOrganzier
 
         private void submitBtn_Click(object sender, EventArgs e)
         {
+            SubmitData();
+        }
+
+        private void Form2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                SubmitData();
+            }
+        }
+
+        private void SubmitData()
+        {
             Form1 form1 = new Form1();
 
-            switch (mode.Mode)
+            switch (Tools.AddMode)
             {
                 case "elec3AddBtn":
                     form1.elective3.Description = descTxtBx.Text;
