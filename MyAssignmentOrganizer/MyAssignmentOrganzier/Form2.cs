@@ -15,9 +15,13 @@ namespace MyAssignmentOrganzier
         public delegate void OnConfirm();
         public OnConfirm Confirmed;
 
-        public Form2()
+        Form1 form1; //declaring a container for the passed 'Form1'
+
+        public Form2(Form1 passedForm)
         {
             InitializeComponent();
+
+            form1 = passedForm; // passing the Form1 to form1 var
         }
 
         private void submitBtn_Click(object sender, EventArgs e)
@@ -35,39 +39,37 @@ namespace MyAssignmentOrganzier
 
         private void SubmitData()
         {
-            Form1 form1 = new Form1();
-
-            switch (Tools.AddMode)
+            switch (Subject.Mode)
             {
-                case "elec3AddBtn":
+                case "elec3Btn":
                     form1.elective3.Description = descTxtBx.Text;
                     form1.elective3.Deadline = dedlineTxtBx.Text;
                     break;
-                case "elec4AddBtn":
+                case "elec4Btn":
                     form1.elective4.Description = descTxtBx.Text;
                     form1.elective4.Deadline = dedlineTxtBx.Text;
                     break;
-                case "ethicsAddBtn":
+                case "ethicsBtn":
                     form1.ethics.Description = descTxtBx.Text;
                     form1.ethics.Deadline = dedlineTxtBx.Text;
                     break;
-                case "networksAddBtn":
+                case "networksBtn":
                     form1.networks.Description = descTxtBx.Text;
                     form1.networks.Deadline = dedlineTxtBx.Text;
                     break;
-                case "fieldtripsAddBtn":
+                case "fieldtripsBtn":
                     form1.fieldtrips.Description = descTxtBx.Text;
                     form1.fieldtrips.Deadline = dedlineTxtBx.Text;
                     break;
-                case "softwareAddBtn":
+                case "softwareBtn":
                     form1.software.Description = descTxtBx.Text;
                     form1.software.Deadline = dedlineTxtBx.Text;
                     break;
-                case "technoAddBtn":
+                case "technoBtn":
                     form1.techno.Description = descTxtBx.Text;
                     form1.techno.Deadline = dedlineTxtBx.Text;
                     break;
-                case "tqmAddBtn":
+                case "tqmBtn":
                     form1.tqm.Description = descTxtBx.Text;
                     form1.tqm.Deadline = dedlineTxtBx.Text;
                     break;

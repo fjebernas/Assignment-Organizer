@@ -15,7 +15,7 @@ namespace MyAssignmentOrganzier
 {
     public partial class Form1 : Form
     {
-        readonly string _path = @"C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganizer\MyAssignmentOrganzier\json\Data.json";
+        private const string _path = @"C:\Users\franc\source\repos\MyAssignmentOrganzier\MyAssignmentOrganizer\MyAssignmentOrganzier\json\Data.json";
 
         // INSTATIATE AN 'ALL' CLASS
         public All allSubjects = new All();
@@ -77,9 +77,9 @@ namespace MyAssignmentOrganzier
         private void addBtn_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            Tools.AddMode = btn.Name;
+            Subject.Mode = btn.Tag.ToString();
 
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(this);
             form2.Confirmed += HasBeenConfirmed;
             form2.Show();
         }
@@ -87,38 +87,39 @@ namespace MyAssignmentOrganzier
         private void finishedBtn_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
+            Subject.Mode = btn.Tag.ToString();
 
-            switch (btn.Name)
+            switch (Subject.Mode)
             {
-                case "elec3FinishedBtn":
+                case "elec3Btn":
                     elec3DescLabel.Text = "";
                     elec3DedlineLabel.Text = "";
                     break;
-                case "elec4FinishedBtn":
+                case "elec4Btn":
                     elec4DescLabel.Text = "";
                     elec4DedlineLabel.Text = "";
                     break;
-                case "ethicsFinishedBtn":
+                case "ethicsBtn":
                     ethicsDescLabel.Text = "";
                     ethicsDedlineLabel.Text = "";
                     break;
-                case "networksFinishedBtn":
+                case "networksBtn":
                     networksDescLabel.Text = "";
                     networksDedlineLabel.Text = "";
                     break;
-                case "fieldtripsFinishedBtn":
+                case "fieldtripsBtn":
                     fieldtripsDescLabel.Text = "";
                     fieldtripsDedlineLabel.Text = "";
                     break;
-                case "softwareFinishedBtn":
+                case "softwareBtn":
                     softwareDescLabel.Text = "";
                     softwareDedlineLabel.Text = "";
                     break;
-                case "technoFinishedBtn":
+                case "technoBtn":
                     technoDescLabel.Text = "";
                     technoDedlineLabel.Text = "";
                     break;
-                case "tqmFinishedBtn":
+                case "tqmBtn":
                     tqmDescLabel.Text = "";
                     tqmDedlineLabel.Text = "";
                     break;
@@ -131,37 +132,37 @@ namespace MyAssignmentOrganzier
 
         private void HasBeenConfirmed()
         {
-            switch (Tools.AddMode)
+            switch (Subject.Mode)
             {
-                case "elec3AddBtn":
+                case "elec3Btn":
                     elec3DescLabel.Text = elective3.Description;
                     elec3DedlineLabel.Text = elective3.Deadline;
                     break;
-                case "elec4AddBtn":
+                case "elec4Btn":
                     elec4DescLabel.Text = elective4.Description;
                     elec4DedlineLabel.Text = elective4.Deadline;
                     break;
-                case "ethicsAddBtn":
+                case "ethicsBtn":
                     ethicsDescLabel.Text = ethics.Description;
                     ethicsDedlineLabel.Text = ethics.Deadline;
                     break;
-                case "networksAddBtn":
+                case "networksBtn":
                     networksDescLabel.Text = networks.Description;
                     networksDedlineLabel.Text = networks.Deadline;
                     break;
-                case "fieldtripsAddBtn":
+                case "fieldtripsBtn":
                     fieldtripsDescLabel.Text = fieldtrips.Description;
                     fieldtripsDedlineLabel.Text = fieldtrips.Deadline;
                     break;
-                case "softwareAddBtn":
+                case "softwareBtn":
                     softwareDescLabel.Text = software.Description;
                     softwareDedlineLabel.Text = software.Deadline;
                     break;
-                case "technoAddBtn":
+                case "technoBtn":
                     technoDescLabel.Text = techno.Description;
                     technoDedlineLabel.Text = techno.Deadline;
                     break;
-                case "tqmAddBtn":
+                case "tqmBtn":
                     tqmDescLabel.Text = tqm.Description;
                     tqmDedlineLabel.Text = tqm.Deadline;
                     break;
@@ -174,29 +175,44 @@ namespace MyAssignmentOrganzier
 
         private void Save()
         {
-            allSubjects.elec3_desc = elec3DescLabel.Text;
-            allSubjects.elec3_dline = elec3DedlineLabel.Text;
+            switch (Subject.Mode)
+            {
+                case "elec3Btn":
+                    allSubjects.elec3_desc = elec3DescLabel.Text;
+                    allSubjects.elec3_dline = elec3DedlineLabel.Text;
+                    break;
+                case "elec4Btn":
+                    allSubjects.elec4_desc = elec4DescLabel.Text;
+                    allSubjects.elec4_dline = elec4DedlineLabel.Text;
+                    break;
+                case "ethicsBtn":
+                    allSubjects.ethics_desc = ethicsDescLabel.Text;
+                    allSubjects.ethics_dline = ethicsDedlineLabel.Text;
+                    break;
+                case "networksBtn":
+                    allSubjects.networks_desc = networksDescLabel.Text;
+                    allSubjects.networks_dline = networksDedlineLabel.Text;
+                    break;
+                case "fieldtripsBtn":
+                    allSubjects.fieldtrips_desc = fieldtripsDescLabel.Text;
+                    allSubjects.fieldtrips_dline = fieldtripsDedlineLabel.Text;
+                    break;
+                case "softwareBtn":
+                    allSubjects.software_desc = softwareDescLabel.Text;
+                    allSubjects.software_dline = softwareDedlineLabel.Text;
+                    break;
+                case "technoBtn":
+                    allSubjects.techno_desc = technoDescLabel.Text;
+                    allSubjects.techno_dline = technoDedlineLabel.Text;
+                    break;
+                case "tqmBtn":
+                    allSubjects.tqm_desc = tqmDescLabel.Text;
+                    allSubjects.tqm_dline = tqmDedlineLabel.Text;
+                    break;
 
-            allSubjects.elec4_desc = elec4DescLabel.Text;
-            allSubjects.elec4_dline = elec4DedlineLabel.Text;
-
-            allSubjects.ethics_desc = ethicsDescLabel.Text;
-            allSubjects.ethics_dline = ethicsDedlineLabel.Text;
-
-            allSubjects.networks_desc = networksDescLabel.Text;
-            allSubjects.networks_dline = networksDedlineLabel.Text;
-
-            allSubjects.fieldtrips_desc = fieldtripsDescLabel.Text;
-            allSubjects.fieldtrips_dline = fieldtripsDedlineLabel.Text;
-
-            allSubjects.software_desc = softwareDescLabel.Text;
-            allSubjects.software_dline = softwareDedlineLabel.Text;
-
-            allSubjects.techno_desc = technoDescLabel.Text;
-            allSubjects.techno_dline = technoDedlineLabel.Text;
-
-            allSubjects.tqm_desc = tqmDescLabel.Text;
-            allSubjects.tqm_dline = tqmDedlineLabel.Text;
+                default:
+                    break;
+            }
 
             string jsonToWrite = JsonConvert.SerializeObject(allSubjects, Formatting.Indented);
 
